@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Drift & Tide</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><img src="images/logo.svg" class="logo" /></a>
+          </li>
+          <div class="nav-links">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li>
+              <a href="#"
+                ><img src="images/cart.svg" class="cart" alt="Shopping cart"
+              /></a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>DRIFT & TIDE</h1>
+        <p>
+          Inspired by driftwood, salt air, and the pull of the tide. Drift &
+          Tide creates durable coastal apparel for those who find calm in
+          motion.
+        </p>
+        <button class="btn" data-modal-target="#modal">Get 30% Off</button>
+      </section>
+    </main>
+    <div
+      class="modal"
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <button class="modal-close" aria-label="Close modal" data-close-button>
+        &times;
+      </button>
+      <div class="modal-card">
+        <div class="modal-left">
+          <img src="images/dress.png" alt="dress" />
+        </div>
+        <div class="modal-right">
+          <div class="modal-right-inner">
+            <div class="modal-deco">
+              <span class="deco-line"></span>
+              <div id="modal-title" class="modal-small-title">TODAY ONLY</div>
+              <span class="deco-line"></span>
+            </div>
+
+            <h2 class="modal-hero">SAVE <span>30%</span></h2>
+
+            <p class="modal-copy">
+              ON ALL COASTAL SETS<br />
+              WITH CODE <strong>COASTAL30</strong>
+            </p>
+            <div class="modal-actions">
+              <a class="modal-cta" href="#">Shop the Sale</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+</html>
