@@ -8,26 +8,30 @@
     <link href="styles.css" rel="stylesheet" />
     <script defer src="script.js"></script>
   </head>
+
   <body>
+    <!-- ---------------- HEADER / NAV ---------------- -->
     <header>
       <nav>
         <ul>
           <li>
-            <a href="#"><img src="images/logo.svg" class="logo" /></a>
+            <a href="./"
+              ><img src="./images/logo.svg" class="logo" alt="Drift & Tide logo"
+            /></a>
           </li>
-          <div class="nav-links">
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li>
-              <a href="#"
-                ><img src="images/cart.svg" class="cart" alt="Shopping cart"
-              /></a>
-            </li>
-          </div>
+
+          <li class="nav-links">
+            <a href="#">ABOUT</a>
+            <a href="#">SHOP</a>
+            <a href="#">CONTACT</a>
+            <a href="#"
+               ><a href="#"><img src="./images/cart.svg" class="cart" alt="Shopping cart" /></a>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <!-- ---------------- HERO ---------------- -->
     <main>
       <section class="hero">
         <h1>DRIFT & TIDE</h1>
@@ -39,6 +43,8 @@
         <button class="btn" data-modal-target="#modal">Get 30% Off</button>
       </section>
     </main>
+
+    <!-- ---------------- MODAL ---------------- -->
     <div
       class="modal"
       id="modal"
@@ -49,10 +55,12 @@
       <button class="modal-close" aria-label="Close modal" data-close-button>
         &times;
       </button>
+
       <div class="modal-card">
         <div class="modal-left">
-          <img src="images/dress.png" alt="dress" />
+          <img src="./images/dress.png" alt="dress" />
         </div>
+
         <div class="modal-right">
           <div class="modal-right-inner">
             <div class="modal-deco">
@@ -67,6 +75,7 @@
               ON ALL COASTAL SETS<br />
               WITH CODE <strong>COASTAL30</strong>
             </p>
+
             <div class="modal-actions">
               <a class="modal-cta" href="#">Shop the Sale</a>
             </div>
@@ -74,6 +83,8 @@
         </div>
       </div>
     </div>
+
+    <!-- ---------------- OVERLAY ---------------- -->
     <div id="overlay"></div>
   </body>
 </html>
